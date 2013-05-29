@@ -135,13 +135,6 @@ def decomment(mode, source):
 	else:
 		manHelpToussa()
 
-
-#	boucle:
-#		
-#		workOnComment(filetreesource)
-#		mv(filetreesource, source.path + _uncomment / + treesource + file - uncomment)  
-    
-    
   
 ### Executed as standalone:
 if __name__ == '__main__' :
