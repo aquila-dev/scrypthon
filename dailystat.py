@@ -50,6 +50,8 @@ def getStreamName(now):
 		endingProgram = elt[8:]
 		endingProgram = endingProgram.split(':')
 		endingProgram = datetime.time(int(endingProgram[0]),int(endingProgram[1]))
+		if beginningProgram > endingProgram:
+			endingProgram=datetime.time(23,59)
 		if now.time() > beginningProgram and now.time() < endingProgram:
 			return dailyProgram[elt]	
 		
